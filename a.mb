@@ -1,0 +1,69 @@
+>> dates = datenum("10:06:2001", 'mm-dd-yyyy);
+ dates = datenum("10:06:2001", 'mm-dd-yyyy);
+                               ↑
+Error: Character vector is not terminated properly.
+ 
+>> dates = datenum('10:06:2001', 'mm-dd-yyyy);
+ dates = datenum('10:06:2001', 'mm-dd-yyyy);
+                               ↑
+Error: Character vector is not terminated properly.
+ 
+>> dates = datenum(10062001, 'mm-dd-yyyy);
+ dates = datenum(10062001, 'mm-dd-yyyy);
+                           ↑
+Error: Character vector is not terminated properly.
+ 
+>> dates = datenum([10062001], 'mm-dd-yyyy);
+ dates = datenum([10062001], 'mm-dd-yyyy);
+                             ↑
+Error: Character vector is not terminated properly.
+ 
+>> dates = datenum('10-06-2001', 'mm-dd-yyyy);
+ dates = datenum('10-06-2001', 'mm-dd-yyyy);
+                               ↑
+Error: Character vector is not terminated properly.
+ 
+>> dates = datenum('10-06-2001');
+>> disp(dates)
+      731130
+
+>> hr = 1232
+
+hr =
+
+        1232
+
+>> disp(hr/23)
+   53.5652
+
+>> disp(48/24)
+     2
+
+>> x = NaN(24, 1);
+>> disp(x)
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+
+>> 
